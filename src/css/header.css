@@ -1,28 +1,33 @@
 .header {
   background-color: lightblue;
   color: white;
-  weight: 100vw;
+  width: 100vw;
   height: 60px;
+  position: fixed;
+  top: 0;
+  padding-left: 10px;
 }
 
 .header h1 {
   float: left;
-  font-weight: 500;
-  margin: 7px 0 0 10px;
-  /* color: rgba(10, 6, 255, 0.699); */
+  font-weight: 100;
   color: black;
 }
 
-.header img {
+.cart-img {
   height: 35px;
   padding: 10px;
-  float: right;
-  margin-right: 50px;
+  opacity: 0.6;
+  /* Motherfucker float why the fuck it doesnt working */
+  /* float: right; */
+  position: fixed;
+  right: 0;
+  margin-right: 90px;
 }
 
-.header p {
+.cart-count {
   color: white;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 15px;
   display: flex;
   align-items: center;
@@ -31,7 +36,9 @@
   height: 25px;
   border-radius: 50%;
   justify-content: center;
-  float: right;
-  margin-top: 5px;
-  margin-right: -65px;
+  margin-top: -25px;
+  margin-right: 88px;
+
+  position: fixed;
+  right: 0;
 }

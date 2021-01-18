@@ -1,0 +1,12 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: lightblue;
+  width: 100vw;
+  height: 60px;
+}
+
+h1 {
+  font-weight: 100;
+}

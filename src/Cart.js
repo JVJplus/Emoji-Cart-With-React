@@ -1,8 +1,16 @@
 import React from 'react';
+import './css/common.css';
+import CartItem from './CartItem';
 
 class Cart extends React.Component {
   render() {
-    return <h2>Cart!</h2>;
+    return (
+      <div className={'cart-container'}>
+        <CartItem />
+        <CartItem />
+        <CartItem />
+      </div>
+    );
   }
 }
 

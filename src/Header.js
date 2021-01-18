@@ -1,16 +1,18 @@
 import React from 'react';
+import './css/common.css';
 import './css/header.css';
 
 class Header extends React.Component {
   render() {
     return (
-      <div className={'header'}>
-        <h1>Cart Items:</h1>
+      <div className={'header centre-content-vertically'}>
+        <h1>🛒 Cart Items</h1>
         <img
-          src="https://www.flaticon.com/svg/vstatic/svg/711/711192.svg?token=exp=1610505358~hmac=28f70230a2d89e27b0becb688247649e"
+          className={'cart-img'}
+          src="https://www.flaticon.com/svg/vstatic/svg/833/833314.svg?token=exp=1610994947~hmac=f4ba11657dd6c4cabad8a255eda93fbe"
           alt="cart icon"
         ></img>
-        <p>3</p>
+        <p className={'cart-count'}>3</p>
       </div>
     );
   }
