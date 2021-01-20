@@ -1,0 +1,35 @@
+.add-emoji-container {
+  width: 100%;
+  height: 90%;
+  border-bottom: 2px solid #99c6d48c;
+}
+
+.add-emoji-container main {
+  /* border: 1px solid red; */
+  height: 400px;
+  width: 80%;
+}
+
+.add-emoji-container main * {
+  padding: 5px;
+  margin-bottom: 12px;
+  outline: none;
+  font-size: 14px;
+  border-radius: 4px;
+  width: 150px;
+  /* padding-left: 15px; */
+  text-align: center;
+}
+.add-emoji-container input {
+  border: 2px solid #0000033d;
+  height: 20px;
+}
+
+.add-emoji-container .submit-btn {
+  width: 80px;
+  margin-left: 25%;
+  cursor: pointer;
+  margin-top: 8px;
+  border-radius: 0;
+  padding-left: 0;
+}

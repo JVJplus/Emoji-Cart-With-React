@@ -1,0 +1,16 @@
+.side-menu-container {
+  width: 400px;
+  float: right;
+  position: fixed;
+  right: 0;
+  margin-top: 60px;
+  height: calc(100vh - 60px);
+  background: #e1f1f6;
+}
+
+.total-price {
+  font-weight: 100;
+  padding: 10px;
+  float: right;
+  font-size: 30px;
+}

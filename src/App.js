@@ -2,7 +2,8 @@ import React from 'react';
 import './css/common.css';
 import Header from './Header';
 import Cart from './Cart';
-import Footer from './Footer';
+import SideMenu from './SideMenu';
+// import Footer from './Footer';
 
 class App extends React.Component {
   constructor() {
@@ -96,6 +97,12 @@ class App extends React.Component {
     return this.state.products.reduce((total, e) => total + e.qty * e.price, 0);
   }
 
+  addEmoji(e) {
+    e.preventDefault();
+    console.log('Submitted');
+    console.log(e);
+  }
+
   render() {
     return (
       <div className="App">
@@ -105,7 +112,8 @@ class App extends React.Component {
           updateQty={this.updateQty}
           removeProduct={this.removeProduct}
         />
-        <Footer totalPrice={this.getTotalPrice()} />
+        {/* <Footer totalPrice={this.getTotalPrice()} /> */}
+        <SideMenu totalPrice={this.getTotalPrice()} addEmoji={this.addEmoji} />
       </div>
     );
   }

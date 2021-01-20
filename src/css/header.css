@@ -1,5 +1,5 @@
 .header {
-  background-color: lightblue;
+  background-color: #d2eaf1;
   color: white;
   width: 100vw;
   height: 60px;
@@ -22,7 +22,7 @@
   /* float: right; */
   position: fixed;
   right: 0;
-  margin-right: 90px;
+  margin-right: 30px;
 }
 
 .header .cart-count {
@@ -37,7 +37,7 @@
   border-radius: 50%;
   justify-content: center;
   margin-top: -25px;
-  margin-right: 88px;
+  margin-right: 28px;
 
   position: fixed;
   right: 0;

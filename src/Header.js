@@ -10,7 +10,7 @@ class Header extends React.Component {
         <h1> &nbsp;Emoji Cart Items</h1>
         <img
           className={'cart-img'}
-          src="https://www.flaticon.com/svg/vstatic/svg/833/833314.svg?token=exp=1610994947~hmac=f4ba11657dd6c4cabad8a255eda93fbe"
+          src="https://www.flaticon.com/svg/vstatic/svg/833/833314.svg?token=exp=1611151496~hmac=8c47369272e24707cdb148961bea19e4"
           alt="cart icon"
         ></img>
         <p className={'cart-count'}>{this.props.totalQnty}</p>
