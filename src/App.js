@@ -99,8 +99,25 @@ class App extends React.Component {
 
   addEmoji(e) {
     e.preventDefault();
-    console.log('Submitted');
-    console.log(e);
+    const data = new FormData(e.target);
+
+    // Display the key/value pairs
+    console.log(this);
+    let { products } = this.state;
+    let newEmojiDatas = { id: products.length + 1 };
+    for (let pair of data.entries()) {
+      if (Number.isInteger(1 * pair[1])) {
+        pair[1] = 1 * pair[1];
+      }
+      newEmojiDatas[pair[0]] = pair[1];
+    }
+
+    products.push(newEmojiDatas);
+    this.setState({ products });
+
+    // TODO: Auto Scroll To End
+
+    e.target.reset();
   }
 
   render() {
@@ -113,7 +130,11 @@ class App extends React.Component {
           removeProduct={this.removeProduct}
         />
         {/* <Footer totalPrice={this.getTotalPrice()} /> */}
-        <SideMenu totalPrice={this.getTotalPrice()} addEmoji={this.addEmoji} />
+        <SideMenu
+          totalPrice={this.getTotalPrice()}
+          addEmoji={this.addEmoji}
+          AppThis={this}
+        />
       </div>
     );
   }
