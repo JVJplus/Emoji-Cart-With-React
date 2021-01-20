@@ -7,7 +7,6 @@
 body {
   /* TODO: Change Font */
   font-family: 'system-ui', Arial, Helvetica, sans-serif;
-  font-weight: 100;
 }
 
 .centre-content-vertically {
@@ -17,4 +16,10 @@ body {
 .centre-content-horizontally {
   display: flex;
   justify-content: center;
+}
+
+.centre-content-both {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -5,8 +5,8 @@ import './css/footer.css';
 class Footer extends React.Component {
   render() {
     return (
-      <div className={'footer'}>
-        <h1>👆 Total: 253.51</h1>
+      <div className={'footer centre-content-vertically'}>
+        <h1>👆 Total: {this.props.totalPrice}</h1>
       </div>
     );
   }

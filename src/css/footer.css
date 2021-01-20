@@ -5,8 +5,9 @@
   background-color: lightblue;
   width: 100vw;
   height: 60px;
+  padding-left: 50px;
 }
 
-h1 {
+.footer h1 {
   font-weight: 100;
 }

@@ -1,12 +1,49 @@
 import React from 'react';
 import './css/common.css';
+import './css/cartItem.css';
 
 class CartItem extends React.Component {
   render() {
     return (
-      <div className={'cart-item-container'}>
-        <h2>Some Item</h2>
-      </div>
+      // <React.Fragment>
+      <>
+        <div className="cart-item-container">
+          <div className="cart-img centre-content-both ">
+            {/* <img src="" alt=""></img> */}
+            {/* <h1 className="flip-image">{this.props.product.img}</h1> */}
+            <h1>{this.props.product.img}</h1>
+          </div>
+
+          <div className="cart-details-cntr">
+            <h4>{this.props.product.title}</h4>
+            <p>Price: {this.props.product.price}</p>
+            <p>Quantity: {this.props.product.qty}</p>
+            <div className="cart-btns-cntr centre-content-vertically">
+              <img
+                alt="add"
+                src="https://image.flaticon.com/icons/svg/1665/1665578.svg"
+                className="action-icons"
+                onClick={() => this.props.updateQty('+', this.props.product.id)}
+              />
+
+              <img
+                alt="minus"
+                src="https://image.flaticon.com/icons/svg/1665/1665612.svg"
+                className="action-icons"
+                onClick={() => this.props.updateQty('-', this.props.product.id)}
+              />
+
+              <img
+                alt="delete"
+                src="https://image.flaticon.com/icons/svg/1214/1214428.svg"
+                className="action-icons"
+                onClick={() => this.props.removeProduct(this.props.product.id)}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="cart-item-dividor"></div>
+      </>
     );
   }
 }
