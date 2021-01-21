@@ -17,17 +17,14 @@ class App extends React.Component {
 
   componentDidMount() {
     const db = firebase.firestore();
-    db.collection('products')
-      .get()
-      .then(snapshot => {
-        console.log(snapshot);
-        const products = snapshot.docs.map(doc => {
-          const data = doc.data();
-          data['id'] = doc.id;
-          return data;
-        });
-        this.setState({ products });
+    db.collection('products').onSnapshot(snapshot => {
+      const products = snapshot.docs.map(doc => {
+        const data = doc.data();
+        data['id'] = doc.id;
+        return data;
       });
+      this.setState({ products });
+    });
   }
 
   updateQty = (type, id) => {
