@@ -8,8 +8,7 @@ class AddEmoji extends React.Component {
       <div className={'add-emoji-container centre-content-both '}>
         <main className="centre-content-both ">
           <form onSubmit={this.props.addEmoji.bind(this.props.AppThis)}>
-            {/* <a href="https://getemoji.com/">Select emojis</a> */}
-            {/* TODO: Add 'browse image' after emoji input field image href  */}
+            {/* TODO: Add https://www.cssscript.com/emoji-picker-button/ */}
             <input type="text" name="img" placeholder="Emoji" required></input>
             <input
               type="text"
