@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/common.css';
 import './css/header.css';
+import cartIcon from './assets/shopping-cart.svg';
 
 class Header extends React.Component {
   render() {
@@ -10,7 +11,7 @@ class Header extends React.Component {
         <h1> &nbsp;Emoji Cart Items</h1>
         <img
           className={'cart-img noselect'}
-          src="https://www.flaticon.com/svg/vstatic/svg/833/833314.svg?token=exp=1611151496~hmac=8c47369272e24707cdb148961bea19e4"
+          src={cartIcon}
           alt="cart icon"
         ></img>
         <p className={'cart-count'}>{this.props.totalQnty}</p>
