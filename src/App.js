@@ -102,7 +102,7 @@ class App extends React.Component {
     const data = new FormData(e.target);
 
     let { products } = this.state;
-    let newEmojiDatas = { id: products.length + 1 };
+    let newEmojiDatas = { id: products[products.length - 1].id + 1 };
     for (let pair of data.entries()) {
       if (Number.isInteger(1 * pair[1])) {
         pair[1] = 1 * pair[1];
