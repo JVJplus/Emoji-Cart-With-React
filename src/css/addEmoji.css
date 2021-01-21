@@ -18,7 +18,8 @@
 .add-emoji-container input {
   padding: 5px;
   margin-bottom: 12px;
-  outline: none;
+  outline-width: 1px;
+  outline-color: #99c6d4cb;
   font-size: 14px;
   border-radius: 4px;
   width: 150px;

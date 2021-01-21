@@ -13,7 +13,12 @@ class AddEmoji extends React.Component {
   render() {
     window.addEventListener('DOMContentLoaded', () => {
       const button = document.querySelector('#emoji-button');
-      const picker = new EmojiButton({ position: 'auto' });
+      const picker = new EmojiButton({
+        emojisPerRow: 7,
+        rows: 5,
+        position: 'bottom-start',
+        emojiSize: '30px',
+      });
 
       picker.on('emoji', emoji => {
         document.querySelector('#emoji-field').value = emoji.emoji;
