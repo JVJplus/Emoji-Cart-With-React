@@ -5,31 +5,56 @@
 }
 
 .add-emoji-container main {
-  /* border: 1px solid red; */
   height: 400px;
   width: 80%;
 }
 
-.add-emoji-container main * {
+.add-emoji-container main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-emoji-container input {
   padding: 5px;
   margin-bottom: 12px;
   outline: none;
   font-size: 14px;
   border-radius: 4px;
   width: 150px;
-  /* padding-left: 15px; */
-  text-align: center;
-}
-.add-emoji-container input {
+  padding-left: 25px;
+  padding-right: 15px;
   border: 1px solid #0000033d;
   height: 20px;
 }
 
+.add-emoji-container button {
+  padding: 5px;
+  margin-bottom: 12px;
+  outline: none;
+  font-size: 14px;
+  border-color: #0000033d;
+  border-width: 1px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#emoji-field {
+  width: 110px;
+  margin-right: 10px;
+}
+
 .add-emoji-container .submit-btn {
   width: 80px;
-  margin-left: 25%;
+  height: 25px;
   cursor: pointer;
   margin-top: 8px;
   border-radius: 0;
   padding-left: 0;
+  padding-right: 0;
+  font-weight: bold;
+  border-radius: 4px;
+  color: grey;
+  text-align: center;
 }

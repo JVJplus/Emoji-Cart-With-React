@@ -61,6 +61,6 @@
 
 .cart-item-dividor:not(:last-child) {
   height: 1px;
-  width: 300px;
+  width: 360px;
   background-color: rgba(0, 0, 0, 0.253);
 }

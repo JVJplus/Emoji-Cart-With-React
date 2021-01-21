@@ -7,6 +7,7 @@ class CartItem extends React.Component {
     return (
       // <React.Fragment>
       <>
+        {/* TODO: Reduce Size */}
         <div className="cart-item-container">
           <div className="cart-img centre-content-both ">
             {/* <img src="" alt=""></img> */}
@@ -18,7 +19,8 @@ class CartItem extends React.Component {
             <h4>{this.props.product.title}</h4>
             <p>Price: {this.props.product.price}</p>
             <p>Quantity: {this.props.product.qty}</p>
-            <div className="cart-btns-cntr centre-content-vertically">
+
+            <div className="cart-btns-cntr centre-content-vertically noselect">
               <img
                 alt="add"
                 src="https://image.flaticon.com/icons/svg/1665/1665578.svg"

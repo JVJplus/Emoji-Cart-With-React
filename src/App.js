@@ -101,8 +101,6 @@ class App extends React.Component {
     e.preventDefault();
     const data = new FormData(e.target);
 
-    // Display the key/value pairs
-    console.log(this);
     let { products } = this.state;
     let newEmojiDatas = { id: products.length + 1 };
     for (let pair of data.entries()) {
