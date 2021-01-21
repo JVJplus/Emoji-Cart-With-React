@@ -5,55 +5,29 @@ import Cart from './Cart';
 import SideMenu from './SideMenu';
 // import Footer from './Footer';
 
+import firebase from './firebase';
+
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      products: [
-        {
-          id: 1,
-          img: '🥳',
-          title: "Let's Party",
-          price: 10,
-          qty: 3,
-        },
-        {
-          id: 2,
-          img: '🥰',
-          title: 'Loved',
-          price: 100,
-          qty: 5,
-        },
-        {
-          id: 3,
-          img: '🤣',
-          title: 'Funny',
-          price: 5,
-          qty: 3,
-        },
-        {
-          id: 4,
-          img: '😇',
-          title: 'Blessed',
-          price: 50,
-          qty: 2,
-        },
-        {
-          id: 5,
-          img: '🤭',
-          title: 'Hehehe',
-          price: 20,
-          qty: 1,
-        },
-        {
-          id: 6,
-          img: '👨🏽‍🌾',
-          title: 'Farmer',
-          price: 10,
-          qty: 2,
-        },
-      ],
+      products: [],
     };
+  }
+
+  componentDidMount() {
+    const db = firebase.firestore();
+    db.collection('products')
+      .get()
+      .then(snapshot => {
+        console.log(snapshot);
+        const products = snapshot.docs.map(doc => {
+          const data = doc.data();
+          data['id'] = doc.id;
+          return data;
+        });
+        this.setState({ products });
+      });
   }
 
   updateQty = (type, id) => {
