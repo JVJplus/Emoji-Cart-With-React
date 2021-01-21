@@ -73,7 +73,7 @@ class App extends React.Component {
     const data = new FormData(e.target);
 
     let { products } = this.state;
-    let newEmojiDatas = { id: products[products.length - 1].id + 1 };
+    let newEmojiDatas = {};
     for (let pair of data.entries()) {
       if (Number.isInteger(1 * pair[1])) {
         pair[1] = 1 * pair[1];
@@ -81,8 +81,21 @@ class App extends React.Component {
       newEmojiDatas[pair[0]] = pair[1];
     }
 
-    products.push(newEmojiDatas);
-    this.setState({ products });
+    // NOTE: no need to do this, this will auto done by realtime data updata listner.
+    // products.push(newEmojiDatas);
+    // this.setState({ products });
+
+    const db = firebase.firestore();
+    /* db.collection('products')
+      .add(newEmojiDatas)
+      .catch(err => console.log('Error occured: ', err)); */
+
+    //Cloud Firestore auto-generated IDs do not provide any automatic ordering. If you want to be able to order your documents by creation date, you should store a timestamp as a field in the documents.
+
+    db.collection('products')
+      .doc('' + Date.now())
+      .set(newEmojiDatas)
+      .catch(err => console.log('Error occured: ', err));
 
     // TODO: Auto Scroll To End
 

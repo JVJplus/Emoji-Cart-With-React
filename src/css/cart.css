@@ -6,4 +6,6 @@
   /* background: linear-gradient(white, rgba(96, 145, 250, 0.562)); */
   float: left;
   /* width: 50vw; */
+  display: flex;
+  flex-direction: column-reverse;
 }
