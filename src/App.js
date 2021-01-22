@@ -56,8 +56,15 @@ class App extends React.Component {
       }
     });
 
-    products.splice(indexToRemove, 1);
-    this.setState({ products });
+    /* products.splice(indexToRemove, 1);
+    this.setState({ products }); */
+    const firestoreID = products[indexToRemove].id;
+    const db = firebase.firestore();
+    db.collection('products')
+      .doc(firestoreID)
+      .delete()
+      .then(console.log('Emoji removed successfully.'))
+      .catch(err => console.log('Error occured: ', err));
   };
 
   getTotalQnty() {
