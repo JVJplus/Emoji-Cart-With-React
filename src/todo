@@ -7,3 +7,5 @@
 
 *add emptystate
 *add loading data
+
+*add filter options to use firebase query like sort, price range etc.

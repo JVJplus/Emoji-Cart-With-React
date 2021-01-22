@@ -94,7 +94,7 @@ class App extends React.Component {
     e.preventDefault();
     const data = new FormData(e.target);
 
-    let { products } = this.state;
+    // let { products } = this.state;
     let newEmojiDatas = {};
     for (let pair of data.entries()) {
       if (Number.isInteger(1 * pair[1])) {
