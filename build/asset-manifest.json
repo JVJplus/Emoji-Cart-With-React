@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.1122ff78.chunk.css",
-    "main.js": "/static/js/main.affe45d4.chunk.js",
-    "main.js.map": "/static/js/main.affe45d4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.35567ae4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.35567ae4.js.map",
-    "static/js/2.d2bf52d8.chunk.js": "/static/js/2.d2bf52d8.chunk.js",
-    "static/js/2.d2bf52d8.chunk.js.map": "/static/js/2.d2bf52d8.chunk.js.map",
-    "static/js/3.f4d69edd.chunk.js": "/static/js/3.f4d69edd.chunk.js",
-    "static/js/3.f4d69edd.chunk.js.map": "/static/js/3.f4d69edd.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.919227dbd383d54ba2373643d06e5cb5.js": "/precache-manifest.919227dbd383d54ba2373643d06e5cb5.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.1122ff78.chunk.css.map": "/static/css/main.1122ff78.chunk.css.map",
-    "static/js/2.d2bf52d8.chunk.js.LICENSE.txt": "/static/js/2.d2bf52d8.chunk.js.LICENSE.txt"
+    "main.css": "/Emoji-Cart-With-React/static/css/main.d852cb0e.chunk.css",
+    "main.js": "/Emoji-Cart-With-React/static/js/main.429e23f5.chunk.js",
+    "main.js.map": "/Emoji-Cart-With-React/static/js/main.429e23f5.chunk.js.map",
+    "runtime-main.js": "/Emoji-Cart-With-React/static/js/runtime-main.59f5ae5e.js",
+    "runtime-main.js.map": "/Emoji-Cart-With-React/static/js/runtime-main.59f5ae5e.js.map",
+    "static/js/2.32533fed.chunk.js": "/Emoji-Cart-With-React/static/js/2.32533fed.chunk.js",
+    "static/js/2.32533fed.chunk.js.map": "/Emoji-Cart-With-React/static/js/2.32533fed.chunk.js.map",
+    "static/js/3.b3a2b542.chunk.js": "/Emoji-Cart-With-React/static/js/3.b3a2b542.chunk.js",
+    "static/js/3.b3a2b542.chunk.js.map": "/Emoji-Cart-With-React/static/js/3.b3a2b542.chunk.js.map",
+    "index.html": "/Emoji-Cart-With-React/index.html",
+    "precache-manifest.cd0ef59d86f40f713d6600ecb6a9c42a.js": "/Emoji-Cart-With-React/precache-manifest.cd0ef59d86f40f713d6600ecb6a9c42a.js",
+    "service-worker.js": "/Emoji-Cart-With-React/service-worker.js",
+    "static/css/main.d852cb0e.chunk.css.map": "/Emoji-Cart-With-React/static/css/main.d852cb0e.chunk.css.map",
+    "static/js/2.32533fed.chunk.js.LICENSE.txt": "/Emoji-Cart-With-React/static/js/2.32533fed.chunk.js.LICENSE.txt",
+    "static/media/shopping-cart.svg": "/Emoji-Cart-With-React/static/media/shopping-cart.6fedb436.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.35567ae4.js",
-    "static/js/2.d2bf52d8.chunk.js",
-    "static/css/main.1122ff78.chunk.css",
-    "static/js/main.affe45d4.chunk.js"
+    "static/js/runtime-main.59f5ae5e.js",
+    "static/js/2.32533fed.chunk.js",
+    "static/css/main.d852cb0e.chunk.css",
+    "static/js/main.429e23f5.chunk.js"
   ]
 }
