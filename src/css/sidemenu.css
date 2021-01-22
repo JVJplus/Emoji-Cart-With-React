@@ -22,16 +22,22 @@
     position: initial;
     /* FIXME: why 100vw not working? */
     width: 100vw;
-    height: 50vh;
+    height: auto;
     float: none;
     margin-top: 60px;
+    /* padding-bottom: 20px; */
   }
 
   .total-price {
+    /* REVIEW : can be made sticky */
     font-weight: 300;
     font-size: 20px;
-    margin-right: 10px;
+    margin-right: 0px;
     padding: 8px;
-    /* REVIEW : can be made sticky */
+    padding-right: 15px;
+    background: #e1f1f6;
+    width: 100%;
+    text-align: right;
+    border-bottom: 2px solid #99c6d48c;
   }
 }
