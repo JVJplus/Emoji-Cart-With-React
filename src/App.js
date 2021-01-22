@@ -3,8 +3,6 @@ import './css/common.css';
 import Header from './Header';
 import Cart from './Cart';
 import SideMenu from './SideMenu';
-// import Footer from './Footer';
-
 import firebase from './firebase';
 
 class App extends React.Component {
@@ -125,20 +123,37 @@ class App extends React.Component {
   }
 
   render() {
+    let cartComponent = (
+      <Cart
+        products={this.state.products}
+        updateQty={this.updateQty}
+        removeProduct={this.removeProduct}
+      />
+    );
+
+    let sidebarComponent = (
+      <SideMenu
+        totalPrice={this.getTotalPrice()}
+        addEmoji={this.addEmoji}
+        AppThis={this}
+      />
+    );
+
+    let mobileComponents = (
+      <>
+        {sidebarComponent} {cartComponent}
+      </>
+    );
+    let desktopComponents = (
+      <>
+        {cartComponent} {sidebarComponent}
+      </>
+    );
+
     return (
       <div className="App">
         <Header totalQnty={this.getTotalQnty()} />
-        <Cart
-          products={this.state.products}
-          updateQty={this.updateQty}
-          removeProduct={this.removeProduct}
-        />
-        {/* <Footer totalPrice={this.getTotalPrice()} /> */}
-        <SideMenu
-          totalPrice={this.getTotalPrice()}
-          addEmoji={this.addEmoji}
-          AppThis={this}
-        />
+        {window.innerWidth <= 768 ? mobileComponents : desktopComponents}
       </div>
     );
   }

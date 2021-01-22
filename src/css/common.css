@@ -9,6 +9,8 @@
 body {
   /* TODO: Change Font */
   font-family: 'system-ui', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 .centre-content-vertically {

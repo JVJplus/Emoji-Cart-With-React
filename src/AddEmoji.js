@@ -19,6 +19,7 @@ class AddEmoji extends React.Component {
         rows: 5,
         position: 'bottom-start',
         emojiSize: '30px',
+        autoFocusSearch: false,
       });
 
       picker.on('emoji', emoji => {

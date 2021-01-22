@@ -9,7 +9,7 @@ class Header extends React.Component {
     return (
       <div className={'header centre-content-vertically noselect'}>
         <h1 className="flip-image">🛒 </h1>
-        <h1> &nbsp;Emoji Cart Items</h1>
+        <h1> &nbsp;&nbsp;&nbsp;Emoji Cart Items</h1>
         <img
           className={'cart-img noselect'}
           src={cartIcon}

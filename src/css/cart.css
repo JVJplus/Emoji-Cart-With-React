@@ -1,11 +1,21 @@
 .cart-container {
   /* border: 2px solid red; */
-  margin-top: 50px;
+  margin-top: 60px;
   padding: 10px 0 10px 40px;
-  /* background: url('https://wallpaperaccess.com/full/359397.jpg'); */
   /* background: linear-gradient(white, rgba(96, 145, 250, 0.562)); */
   float: left;
   /* width: 50vw; */
   display: flex;
   flex-direction: column-reverse;
+}
+
+@media only screen and (max-width: 768px) {
+  .cart-container {
+    /* border: 2px solid green; */
+    padding: 10px 0 10px 40px;
+    /* background: linear-gradient(white, rgba(96, 145, 250, 0.562)); */
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
 }
