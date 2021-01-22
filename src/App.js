@@ -43,7 +43,22 @@ class App extends React.Component {
     } else {
       if (products[indexToChange].qty > 0) products[indexToChange].qty -= 1;
     }
-    this.setState(products);
+
+    // this.setState(products);
+    let newQty = products[indexToChange].qty;
+
+    const firestoreID = products[indexToChange].id;
+    const db = firebase.firestore();
+    db.collection('products')
+      .doc(firestoreID)
+      .update({ qty: newQty })
+      .then(function () {
+        console.log('Document successfully updated!');
+      })
+      .catch(function (error) {
+        // The document probably doesn't exist.
+        console.error('Error updating document: ', error);
+      });
   };
 
   removeProduct = id => {
