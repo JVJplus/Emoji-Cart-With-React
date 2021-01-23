@@ -4,16 +4,11 @@
 
 *on changing quantity add animation to emoji size increase then normal!
 
-*for different users show different data, manange db like that!
-*use localstorage if needed
-
-*add emptystate
+*add (+) floating icon can be added on mobile view
 
 *pagination can be added
 
 *add filter options to use firebase query like sort, price range etc.
-
-*add (+) floating icon can be added on mobile view
 
 *add buy option and make admin dashboard
 
@@ -21,3 +16,10 @@
 --------------------DONE----------------------
 *make responsive
 *add loading spinner
+*add emptystate
+
+
+--------------------Postponded----------------------
+*for different users show different data, manange db like that ,use localstorage if needed
+#Requires user id details, not suitable for this UI.
+
