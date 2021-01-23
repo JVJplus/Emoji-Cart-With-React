@@ -10,6 +10,19 @@
   margin-bottom: 4px;
 }
 
+.cart-img h1 {
+  transition: 0.2s all;
+}
+
+.cart-qty-inc {
+  transition: 0.2s all;
+  transform: scale(1.2);
+}
+.cart-qty-dec {
+  transition: 0.2s all;
+  transform: scale(0.8);
+}
+
 .cart-item-container .cart-img {
   /* border: 2px solid red; */
   font-size: 30px;

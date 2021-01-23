@@ -28,6 +28,37 @@ class App extends React.Component {
     });
   }
 
+  handleDOMActionBtnsAnimation(qty, indexToChange) {
+    // Change animation action
+    let minusDOM = document.querySelectorAll('.cart-item-minus-action');
+    if (qty === 0) {
+      minusDOM[indexToChange].classList.remove('action-icons');
+      minusDOM[indexToChange].classList.add('cantDoCursor');
+    } else {
+      minusDOM[indexToChange].classList.add('action-icons');
+      minusDOM[indexToChange].classList.remove('cantDoCursor');
+    }
+  }
+
+  handleEmojiAnimation(type, indexToChange, qty) {
+    let DOMs = document.querySelectorAll('.cart-img h1');
+    if (type === '+') {
+      DOMs[indexToChange].classList.add('cart-qty-inc');
+      setTimeout(
+        () => DOMs[indexToChange].classList.remove('cart-qty-inc'),
+        200
+      );
+    } else {
+      if (qty === 0) return;
+
+      DOMs[indexToChange].classList.add('cart-qty-dec');
+      setTimeout(
+        () => DOMs[indexToChange].classList.remove('cart-qty-dec'),
+        200
+      );
+    }
+  }
+
   updateQty = (type, id) => {
     // products contains reference of state as products is ARRAY!!!
     let { products } = this.state;
@@ -39,6 +70,8 @@ class App extends React.Component {
       }
     });
 
+    this.handleEmojiAnimation(type, indexToChange, products[indexToChange].qty);
+
     if (type === '+') {
       products[indexToChange].qty += 1;
     } else {
@@ -47,15 +80,10 @@ class App extends React.Component {
       }
     }
 
-    // Change animation action
-    let minusDOM = document.querySelectorAll('.cart-item-minus-action');
-    if (products[indexToChange].qty === 0) {
-      minusDOM[indexToChange].classList.remove('action-icons');
-      minusDOM[indexToChange].classList.add('cantDoCursor');
-    } else {
-      minusDOM[indexToChange].classList.add('action-icons');
-      minusDOM[indexToChange].classList.remove('cantDoCursor');
-    }
+    this.handleDOMActionBtnsAnimation(
+      products[indexToChange].qty,
+      indexToChange
+    );
 
     // this.setState(products);
     let newQty = products[indexToChange].qty;

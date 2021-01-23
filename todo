@@ -2,8 +2,7 @@
 
 *change github repo readme
 
-*on changing quantity add animation to emoji size increase then normal!
-
+*ANCHOR - anchors dekh lo on entire workspace
 
 ---------------- No Time -----------------
 *add (+) floating icon can be added on mobile view and show only when scrolled
@@ -30,3 +29,4 @@
 *add animation on hover on emojis
 *if quantity==0 disable minus btn, change cursor
 *lots on animations can be added on click and hover
+*on changing quantity add animation (to emoji size increase then normal) or (enter form side and leave) !
