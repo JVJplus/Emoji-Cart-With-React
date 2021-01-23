@@ -24,21 +24,21 @@ class CartItem extends React.Component {
               <img
                 alt="add"
                 src="https://image.flaticon.com/icons/svg/1665/1665578.svg"
-                className="action-icons"
+                className="action-icons noselect"
                 onClick={() => this.props.updateQty('+', this.props.product.id)}
               />
 
               <img
                 alt="minus"
                 src="https://image.flaticon.com/icons/svg/1665/1665612.svg"
-                className="action-icons"
+                className="action-icons cart-item-minus-action noselect"
                 onClick={() => this.props.updateQty('-', this.props.product.id)}
               />
 
               <img
                 alt="delete"
                 src="https://image.flaticon.com/icons/svg/1214/1214428.svg"
-                className="action-icons"
+                className="action-icons noselect"
                 onClick={() => this.props.removeProduct(this.props.product.id)}
               />
             </div>

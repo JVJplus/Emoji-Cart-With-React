@@ -12,12 +12,13 @@
   float: left;
   font-weight: 500;
   color: black;
-  color: #0270afb0;
+  transition: 1s all;
 }
 
 .header h1:hover {
+  color: #0a90ddb0;
   transition: 1s all;
-  transform: scale(1.1);
+  transform: translateX(20px);
 }
 
 .header .cart-img {
@@ -74,5 +75,9 @@
   .header .cart-count {
     margin-top: -18px;
     margin-right: 15px;
+  }
+
+  .header-cart-emoji:hover {
+    margin-right: 10px;
   }
 }

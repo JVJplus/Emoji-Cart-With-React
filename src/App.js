@@ -42,7 +42,19 @@ class App extends React.Component {
     if (type === '+') {
       products[indexToChange].qty += 1;
     } else {
-      if (products[indexToChange].qty > 0) products[indexToChange].qty -= 1;
+      if (products[indexToChange].qty > 0) {
+        products[indexToChange].qty -= 1;
+      }
+    }
+
+    // Change animation action
+    let minusDOM = document.querySelectorAll('.cart-item-minus-action');
+    if (products[indexToChange].qty === 0) {
+      minusDOM[indexToChange].classList.remove('action-icons');
+      minusDOM[indexToChange].classList.add('cantDoCursor');
+    } else {
+      minusDOM[indexToChange].classList.add('action-icons');
+      minusDOM[indexToChange].classList.remove('cantDoCursor');
     }
 
     // this.setState(products);

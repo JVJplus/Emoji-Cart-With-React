@@ -64,6 +64,11 @@
   background: #9bc8d688;
 }
 
+.add-emoji-container .submit-btn:active,
+.add-emoji-container button:active {
+  transform: scale(0.9);
+}
+
 @media only screen and (max-width: 768px) {
   .add-emoji-container main {
     /* border: 2px solid red; */
