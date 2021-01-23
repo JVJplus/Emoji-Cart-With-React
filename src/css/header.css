@@ -53,6 +53,9 @@
   .header {
     padding-left: 20px;
     width: 111vw;
+    /* border-bottom: 2px solid #99c6d423; */
+    position: sticky;
+    top: 0px;
   }
   .header h1 {
     font-weight: 500;

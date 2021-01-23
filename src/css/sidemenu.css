@@ -10,10 +10,13 @@
 
 .total-price {
   font-weight: 100;
-  padding: 10px;
   float: right;
   font-size: 30px;
-  margin-right: 15px;
+  /* margin-right: 15px; */
+  border-top: 2px solid #99c6d48c;
+  width: 370px;
+  padding: 15px;
+  text-align: right;
 }
 
 @media only screen and (max-width: 768px) {
@@ -24,12 +27,11 @@
     width: 100vw;
     height: auto;
     float: none;
-    margin-top: 60px;
+    margin-top: 0px;
     /* padding-bottom: 20px; */
   }
 
   .total-price {
-    /* REVIEW : can be made sticky */
     font-weight: 300;
     font-size: 20px;
     margin-right: 0px;
@@ -38,6 +40,11 @@
     background: #e1f1f6;
     width: 100%;
     text-align: right;
-    border-bottom: 2px solid #99c6d48c;
+    border-bottom: 1px solid #99c6d48c;
+    border-top: 1px solid #99c6d48c;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px !important;
   }
 }

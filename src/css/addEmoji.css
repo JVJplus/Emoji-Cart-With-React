@@ -1,7 +1,7 @@
 .add-emoji-container {
   width: 100%;
   height: 88%;
-  border-bottom: 2px solid #99c6d48c;
+  /* border-bottom: 2px solid #99c6d48c; */
 }
 
 .add-emoji-container main {
@@ -19,13 +19,13 @@
   padding: 5px;
   margin-bottom: 12px;
   outline-width: 1px;
-  outline-color: #99c6d4cb;
+  outline-color: #5eadc5cb;
   font-size: 14px;
   border-radius: 4px;
   width: 150px;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid #0000033d;
+  border: 1px solid #99c6d4cb;
   height: 20px;
 }
 
@@ -34,11 +34,12 @@
   margin-bottom: 12px;
   outline: none;
   font-size: 14px;
-  border-color: #0000033d;
   border-width: 1px;
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
+  border-color: #99c6d4cb;
+  border-style: solid;
 }
 
 #emoji-field {
@@ -56,9 +57,11 @@
   padding-right: 0;
   font-weight: bold;
   border-radius: 4px;
-  color: grey;
+  color: #0270afb0;
   text-align: center;
-  background-color: #c6eaf5ad;
+  border-color: #99c6d4cb;
+  border-style: solid;
+  background: #9bc8d688;
 }
 
 @media only screen and (max-width: 768px) {

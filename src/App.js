@@ -10,6 +10,7 @@ class App extends React.Component {
     super();
     this.state = {
       products: [],
+      isLoading: true,
     };
   }
 
@@ -21,7 +22,7 @@ class App extends React.Component {
         data['id'] = doc.id;
         return data;
       });
-      this.setState({ products });
+      this.setState({ products, isLoading: false });
     });
   }
 
@@ -125,6 +126,7 @@ class App extends React.Component {
   render() {
     let cartComponent = (
       <Cart
+        isLoading={this.state.isLoading}
         products={this.state.products}
         updateQty={this.updateQty}
         removeProduct={this.removeProduct}

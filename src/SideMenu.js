@@ -6,11 +6,21 @@ import AddEmoji from './AddEmoji';
 
 class SideMenu extends React.Component {
   render() {
+    let totalPriceComponent = (
+      <h1 className="total-price">Total: 💲 {this.props.totalPrice}</h1>
+    );
+
     return (
-      <div className={'side-menu-container'}>
-        <AddEmoji addEmoji={this.props.addEmoji} AppThis={this.props.AppThis} />
-        <h1 className="total-price">Total: 💲 {this.props.totalPrice}</h1>
-      </div>
+      <>
+        <div className={'side-menu-container'}>
+          <AddEmoji
+            addEmoji={this.props.addEmoji}
+            AppThis={this.props.AppThis}
+          />
+          {window.innerWidth > 768 ? totalPriceComponent : null}
+        </div>
+        {window.innerWidth <= 768 ? totalPriceComponent : null}
+      </>
     );
   }
 }
