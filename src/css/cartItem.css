@@ -16,6 +16,13 @@
   padding: 10px;
 }
 
+.cart-item-container .cart-img:hover {
+  transition: 1s all;
+  transform: scale(1.3);
+  /* transform: translate3d(-10px, -10px, 10px); */
+  transform: fl;
+}
+
 .cart-details-cntr {
   /* border: 2px solid purple; */
   padding: 10px;

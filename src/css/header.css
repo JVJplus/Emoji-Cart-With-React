@@ -15,6 +15,11 @@
   color: #0270afb0;
 }
 
+.header h1:hover {
+  transition: 1s all;
+  transform: scale(1.1);
+}
+
 .header .cart-img {
   height: 35px;
   padding: 10px;

@@ -4,7 +4,9 @@
 
 *on changing quantity add animation to emoji size increase then normal!
 
-*add (+) floating icon can be added on mobile view
+*lots on animations can be added on click and hover
+
+*add (+) floating icon can be added on mobile view and show only when scrolled
 
 *pagination can be added
 
@@ -17,7 +19,7 @@
 *make responsive
 *add loading spinner
 *add emptystate
-
+*add animation on hover on emojis
 
 --------------------Postponded----------------------
 *for different users show different data, manange db like that ,use localstorage if needed
