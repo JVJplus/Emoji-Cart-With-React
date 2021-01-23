@@ -17,6 +17,15 @@
   width: 370px;
   padding: 15px;
   text-align: right;
+  /* transition: 1s all; */
+}
+
+.total-price:hover {
+  /* transition: 1s all; */
+  /* transform: translateX(-30px); */
+  /* padding-right: 20px; */
+  font-weight: 500;
+  cursor: default;
 }
 
 @media only screen and (max-width: 768px) {

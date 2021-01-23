@@ -31,6 +31,12 @@
   position: fixed;
   right: 0;
   margin-right: 30px;
+  transition: 1s all;
+}
+
+.header .cart-img:hover {
+  transition: 1s all;
+  opacity: 1;
 }
 
 .header .cart-count {
@@ -49,6 +55,12 @@
 
   position: fixed;
   right: 0;
+  transition: 1s all;
+}
+.header .cart-count:hover {
+  transition: 1s all;
+  transform: scale(1.2);
+  filter: brightness(1.1);
 }
 
 .flip-image {
