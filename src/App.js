@@ -160,8 +160,6 @@ class App extends React.Component {
       .set(newEmojiDatas)
       .catch(err => console.log('Error occured: ', err));
 
-    // TODO: Auto Scroll To End
-
     e.target.reset();
   }
 

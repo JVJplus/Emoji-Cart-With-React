@@ -7,7 +7,6 @@ class CartItem extends React.Component {
     return (
       // <React.Fragment>
       <>
-        {/* TODO: Reduce Size */}
         <div className="cart-item-container">
           <div className="cart-img centre-content-both ">
             {/* <img src="" alt=""></img> */}

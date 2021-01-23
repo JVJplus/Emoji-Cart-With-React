@@ -7,6 +7,7 @@
 .add-emoji-container main {
   height: 400px;
   width: 80%;
+  transform: scale(1.2);
 }
 
 .add-emoji-container main form {
@@ -72,6 +73,7 @@
 @media only screen and (max-width: 768px) {
   .add-emoji-container main {
     /* border: 2px solid red; */
+    transform: scale(1);
     height: auto;
     width: 100%;
     padding-top: 25px;

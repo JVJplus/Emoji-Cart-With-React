@@ -23,7 +23,6 @@
   .side-menu-container {
     /* border: 2px solid purple; */
     position: initial;
-    /* FIXME: why 100vw not working? */
     width: 100vw;
     height: auto;
     float: none;

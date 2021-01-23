@@ -1,7 +1,6 @@
 //TODO -------------------------------------
 
 *change github repo readme
-
 *ANCHOR - anchors dekh lo on entire workspace
 
 ---------------- No Time -----------------
@@ -16,6 +15,8 @@
 *add filter options to use firebase query like sort, price range etc.
 
 *add buy option and make admin dashboard
+
+*Fonts can be experiemented
 
 --------------------Postponded----------------------
 *for different users show different data, manange db like that ,use localstorage if needed
