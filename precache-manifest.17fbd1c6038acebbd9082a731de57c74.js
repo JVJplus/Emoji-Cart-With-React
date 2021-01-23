@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f4e2387d19f82922ea9b1b864a73e0f",
+    "revision": "69a0d55ae52c53bc96d948f7e8eb3938",
     "url": "/Emoji-Cart-With-React/index.html"
   },
   {
-    "revision": "bed6141f7979dfe5fb70",
-    "url": "/Emoji-Cart-With-React/static/css/main.8c4375d7.chunk.css"
+    "revision": "14a83cff9970e0b3b4a2",
+    "url": "/Emoji-Cart-With-React/static/css/main.808a85b4.chunk.css"
   },
   {
     "revision": "afe0c0d42c685e9f10c3",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Emoji-Cart-With-React/static/js/3.1c799361.chunk.js"
   },
   {
-    "revision": "bed6141f7979dfe5fb70",
-    "url": "/Emoji-Cart-With-React/static/js/main.390ab0d1.chunk.js"
+    "revision": "14a83cff9970e0b3b4a2",
+    "url": "/Emoji-Cart-With-React/static/js/main.0d5c0282.chunk.js"
   },
   {
     "revision": "db74a22d5bf6cee33d5d",

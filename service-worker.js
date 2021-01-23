@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Emoji-Cart-With-React/precache-manifest.decb6622f2e9c800c125c2f878f0445f.js"
+  "/Emoji-Cart-With-React/precache-manifest.17fbd1c6038acebbd9082a731de57c74.js"
 );
 
 self.addEventListener('message', (event) => {
