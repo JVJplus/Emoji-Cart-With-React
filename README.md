@@ -25,6 +25,9 @@ https://jvjplus.github.io/Emoji-Cart-With-React
 This app let user add any emoji to cart and accordingly app updates its overall
 amount and quantities.
 
+Many more features can be added but skipped due to lack of time and only
+important things are implemented.
+
 ## Special Features
 
 - Emoji Picker
