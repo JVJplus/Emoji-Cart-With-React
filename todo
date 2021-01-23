@@ -1,6 +1,5 @@
 //TODO -------------------------------------
 
-*change github repo readme
 
 ---------------- No Time -----------------
 *add (+) floating icon can be added on mobile view and show only when scrolled
@@ -8,6 +7,8 @@
 * back to top can be added
 
 *add undo option, show after deleting emoji
+
+*Search can be added
 
 *Favourite can be added
 
@@ -33,3 +34,4 @@
 *lots on animations can be added on click and hover
 *on changing quantity add animation (to emoji size increase then normal) or (enter form side and leave) !
 *ANCHOR - anchors dekh lo on entire workspace
+*change github repo readme
