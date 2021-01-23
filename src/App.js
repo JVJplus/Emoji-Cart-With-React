@@ -12,11 +12,13 @@ class App extends React.Component {
       products: [],
       isLoading: true,
     };
+    this.collectionID = 'products';
+    // this.collectionID = 'products-user-testing';
   }
 
   componentDidMount() {
     const db = firebase.firestore();
-    db.collection('products').onSnapshot(snapshot => {
+    db.collection(this.collectionID).onSnapshot(snapshot => {
       const products = snapshot.docs.map(doc => {
         const data = doc.data();
         data['id'] = doc.id;
@@ -48,7 +50,7 @@ class App extends React.Component {
 
     const firestoreID = products[indexToChange].id;
     const db = firebase.firestore();
-    db.collection('products')
+    db.collection(this.collectionID)
       .doc(firestoreID)
       .update({ qty: newQty })
       .then(function () {
@@ -74,7 +76,7 @@ class App extends React.Component {
     this.setState({ products }); */
     const firestoreID = products[indexToRemove].id;
     const db = firebase.firestore();
-    db.collection('products')
+    db.collection(this.collectionID)
       .doc(firestoreID)
       .delete()
       .then(console.log('Emoji removed successfully.'))
@@ -107,13 +109,13 @@ class App extends React.Component {
     // this.setState({ products });
 
     const db = firebase.firestore();
-    /* db.collection('products')
+    /* db.collection(this.collectionID)
       .add(newEmojiDatas)
       .catch(err => console.log('Error occured: ', err)); */
 
     //Cloud Firestore auto-generated IDs do not provide any automatic ordering. If you want to be able to order your documents by creation date, you should store a timestamp as a field in the documents.
 
-    db.collection('products')
+    db.collection(this.collectionID)
       .doc('' + Date.now())
       .set(newEmojiDatas)
       .catch(err => console.log('Error occured: ', err));

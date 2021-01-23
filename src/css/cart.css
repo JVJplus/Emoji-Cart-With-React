@@ -19,6 +19,15 @@
   width: 100%;
 }
 
+.empty-state * {
+  text-align: center;
+  color: lightslategrey;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 30px;
+  padding-left: 60px;
+}
+
 @media only screen and (max-width: 768px) {
   .cart-container {
     /* border: 2px solid green; */
@@ -31,5 +40,11 @@
 
   .loading-icon {
     width: 80%;
+  }
+
+  .empty-state * {
+    width: 80%;
+    padding-left: 0;
+    line-height: 27px;
   }
 }

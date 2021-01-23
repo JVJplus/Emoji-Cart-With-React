@@ -1,6 +1,4 @@
-//TODO 
-
-*make responsive
+//TODO -------------------------------------
 
 *change github repo readme
 
@@ -10,10 +8,16 @@
 *use localstorage if needed
 
 *add emptystate
-*add loading data
+
+*pagination can be added
 
 *add filter options to use firebase query like sort, price range etc.
 
 *add (+) floating icon can be added on mobile view
 
 *add buy option and make admin dashboard
+
+
+--------------------DONE----------------------
+*make responsive
+*add loading spinner
