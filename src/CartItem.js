@@ -36,7 +36,7 @@ class CartItem extends React.Component {
 
               <img
                 alt="delete"
-                src="https://cdn-icons.flaticon.com/png/512/484/premium/484662.png"
+                src="https://cdn-icons-png.flaticon.com/512/484/484662.png"
                 className="action-icons noselect"
                 onClick={() => this.props.removeProduct(this.props.product.id)}
               />
