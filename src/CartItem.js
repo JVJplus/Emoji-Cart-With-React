@@ -29,7 +29,7 @@ class CartItem extends React.Component {
 
               <img
                 alt="minus"
-                src="https://cdn-icons-png.flaticon.com/128/992/992651.png"
+                src="https://cdn-icons-png.flaticon.com/512/992/992683.png"
                 className="action-icons cart-item-minus-action noselect"
                 onClick={() => this.props.updateQty('-', this.props.product.id)}
               />
